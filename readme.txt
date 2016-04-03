@@ -1,4 +1,4 @@
-Git is a version control system.
+ï»¿Git is a version control system.
 Git is free software.+modified
 
 git config --global user.name 'name'
@@ -15,9 +15,16 @@ git log
 git log --pretty=oneline
 git reset --hard head^
 git log
-git reset --hard 196198(log ÏÔÊ¾µÄidÇ°¼¸Î»£©
-git commit -m ''	#-m'' £¬Îª¿ÕÔòÃ»ÓĞlogÀúÊ·£¡
+git reset --hard 196198(log idå‰å‡ ä½)
+git commit -m ''	#-m''ï¼Œç©ºæ ¼ä¸ä¼šæ·»åŠ åˆ°logè®°å½•ä¸­ï¼Ÿ
 cat readme.txt
 git log
 git reflog
  change1
+ change2
+git diff head -- readme.txt	#-- åå¸¦ç©ºæ ¼
+
+
+
+
+
