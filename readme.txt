@@ -55,5 +55,5 @@ git checkout -b dev
  git checkout dev
 git branch
 git merge dev #当前master分支，合并dev分支到此分支
-git branch -d dev #当前master分支，删除dev分支
+git branch -d dev #当前master分支，删除de2v分支
 
