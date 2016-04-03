@@ -16,4 +16,7 @@ git log --pretty=oneline
 git reset --hard head^
 git log
 git reset --hard 196198(log 显示的id前几位）
-git commit -m ''
+git commit -m ''	#-m'' ，为空则没有log历史！
+cat readme.txt
+git log
+git reflog
