@@ -10,7 +10,7 @@ git init
 git add readme.txt
 git commit -m 'wrote a readme.txt'
 git status
-git diff readme.txt #工作空间与暂存区比较
+git diff readme.txt
 git log #如果日志太长，按q退出
 git log --pretty=oneline
 git reset --hard head^
@@ -22,10 +22,22 @@ git log
 git reflog
  change1
  change2
-git diff head -- readme.txt	#-- 后带空格 暂存区与版本库比较
+git diff head -- readme.txt	#-- 后带空格
  add
 git checkout -- readme.txt #工作空间的文件退回到暂存区中的状态/版本HEAD的状态。
 temp
 git reset head readme.txt #暂存区的修改退回到工作区。
 #测试，工作空间内容。
-added
+ 新添加delete.txt
+ git add delete.txt
+ git commit -m 'add delete.txt ampty file'
+ rm delete.txt #本地删除文件
+ git add delete.txt
+ git commit -m 'delete delete.txt' #成功
+ 
+ git checkout -- delete.txt #error,版本库已删除
+ git rm delete.txt #fatal:pathspec 'delete.txt' did not match any file(s) known to git
+ git reset --hard head^	撤销到上一个版本，delete文件回来了。
+ #BUT,其他文件也退回到之前的版本！
+ 
+ 
