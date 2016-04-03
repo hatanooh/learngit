@@ -65,3 +65,13 @@ git log --graph --pretty=oneline --abbrev-commit
 git merge --no-ff -m 'XX' dev #?dev?
 git branch -d dev #删除分支。如果还未merge，提示
 git branch -D dev #强制删除分支？ 是的！
+git merge --no-ff -m 'git merge --no-ff -m xx branch1' f1
+Bug分支：
+ git stash #save working directory
+ git stash list #查看列表
+ git stash apply stash@{0} #恢复
+ git stash drop #删除 stash@{0}，即默认删除最近
+ git stash pop #恢复并删除
+git checkout -- readme.txt #如果本地删除，可以从版本库恢复
+git reset head/HEAD readme.txt #如果本地删除，不能从版本库恢复
+但是可以从stash中恢复。 stash@{0}指向最新保存的
