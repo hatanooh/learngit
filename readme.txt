@@ -28,3 +28,4 @@ git checkout -- readme.txt #工作空间的文件退回到暂存区中的状态/
 temp
 git reset head readme.txt #暂存区的修改退回到工作区。
 #测试，工作空间内容。
+added
