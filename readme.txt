@@ -20,3 +20,4 @@ git commit -m ''	#-m'' ，为空则没有log历史！
 cat readme.txt
 git log
 git reflog
+ change1
