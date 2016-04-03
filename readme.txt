@@ -76,6 +76,7 @@ git checkout -- readme.txt #如果本地删除，可以从版本库恢复
 git reset head/HEAD readme.txt #如果本地删除，不能从版本库恢复
 但是可以从stash中恢复。 stash@{0}指向最新保存的
 e:/git/learngit:dev
+
 ============================================
 git checkout -b dev #本地创建dev分支
 #修改readme.txt
@@ -86,4 +87,10 @@ git push origin dev #将dev分支push到远程仓库origin
 #user b:
  git checkout -b dev origin/dev #出错：cannot update paths and switch to branch 'dev' at the same time
  git fetch #需要先这行这个命令，在执行上面命令
+ git checkout -b dev origin/dev
+#user a:
+ 此时add，commit后push，出错，应该先pull
+ 还出错，应该先设置本地dev与origin/dev的链接：
+ git branch --set-upstream-to=origin/dev
+ git pull
  
