@@ -56,8 +56,12 @@ git checkout -b dev
 git branch
 git merge dev #当前master分支，合并dev分支到此分支
 git branch -d dev #当前master分支，删除分支
+
+git log --graph --pretty=oneline --abbrev-commit
 master
 f1
 git log --graph --pretty=oneline --abbrev-commit
 #最好不要再bash中粘贴命令，极容易带回车导致立即执行，尤其commit -m ''导致丢失数据
-git merge --no-ff -m 'XX' dev
+git merge --no-ff -m 'XX' dev #?dev?
+git branch -d dev #删除分支。如果还未merge，提示
+git branch -D dev #强制删除分支？
