@@ -40,4 +40,7 @@ git reset head readme.txt #暂存区的修改退回到工作区。
  git reset --hard head^	撤销到上一个版本，delete文件回来了。
  #BUT,其他文件也退回到之前的版本！
  
+ rm delete.txt
+ git rm delete.txt
+ git commit -m 'delete delete.txt' #成功
  
