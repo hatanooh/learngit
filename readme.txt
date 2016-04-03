@@ -45,5 +45,12 @@ git reset head readme.txt #暂存区的修改退回到工作区。
  git commit -m 'delete delete.txt' #成功
 ssh-keygen -t rsa -C "youremail@example.com" #创建SSH key
 git remote add origin git@github.com:hatanooh/learngit.git
-git push -u origin master
-
+git push -u origin master #首次
+git push origin master
+git clone git@github.com:hatanooh/python.git #从远处github克隆
+#branch
+git checkout -b dev
+ 等同于以下两条命令
+ git branch dev
+ git checkout dev
+git branch
