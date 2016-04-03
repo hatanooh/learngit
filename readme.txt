@@ -76,3 +76,4 @@ git checkout -- readme.txt #如果本地删除，可以从版本库恢复
 git reset head/HEAD readme.txt #如果本地删除，不能从版本库恢复
 但是可以从stash中恢复。 stash@{0}指向最新保存的
 e:/git/learngit:dev
+e:/git/git/learngit:dev
