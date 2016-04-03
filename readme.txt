@@ -23,8 +23,8 @@ git reflog
  change1
  change2
 git diff head -- readme.txt	#-- 后带空格
-
-
+ add
+git checkout -- readme.txt #工作空间的文件退回到暂存区中的状态/版本HEAD的状态。
 
 
 
