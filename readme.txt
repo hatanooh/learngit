@@ -43,6 +43,7 @@ git reset head readme.txt #暂存区的修改退回到工作区。
  rm delete.txt
  git rm delete.txt
  git commit -m 'delete delete.txt' #成功
+#相关目录: C:\Users\Administrator\.ssh
 ssh-keygen -t rsa -C "youremail@example.com" #创建SSH key
 git remote add origin git@github.com:hatanooh/learngit.git
 git push -u origin master #首次
