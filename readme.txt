@@ -76,3 +76,21 @@ Bug分支：
 git checkout -- readme.txt #如果本地删除，可以从版本库恢复
 git reset head/HEAD readme.txt #如果本地删除，不能从版本库恢复
 但是可以从stash中恢复。 stash@{0}指向最新保存的
+==实际用法==============================================
+需求：已存在目录：E:\Dropbox\python\tools。加入本地仓库，并上传到github中。
+1.在该目录下右键>Git Bash here.
+2.git init		#初始化
+3.git add .		#当前目录加入暂存区
+4.git commit -m '初始版本'		#提交暂存区到版本库。完成本地仓库工作。
+
+5.github创建仓库
+6.git remote add origin git@github.com:YOUR-GITHUB-ZHANGHU/python-tools.git
+#官方命令：git remote add origin https://github.com/你的github名称/python-tools.git
+
+7.git push -u origin master
+需求：修改了本地文件，更新远程仓库：
+1.git add file.txt
+2.git commit -m '删除敏感信息'
+3.git push origin master 
+#注意：历史版本还存在敏感信息
+需求：比较本地与远程仓库
