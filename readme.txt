@@ -94,3 +94,9 @@ git reset head/HEAD readme.txt #如果本地删除，不能从版本库恢复
 3.git push origin master 
 #注意：历史版本还存在敏感信息
 需求：比较本地与远程仓库
+需求: 克隆SUI-Mobile：https://github.com/sdc-alibaba/SUI-Mobile 保存到E:/git 目录: 
+在E:/git 目录右键,选择GIT BASH HERE,执行下面命令:
+git clone git@github.com:sdc-alibaba/SUI-Mobile.git #从远处github克隆
+#需求: 修改远程仓库地址:
+git remote set-url origin git@github.com:USERNAME/OTHERREPOSITORY.git
+
